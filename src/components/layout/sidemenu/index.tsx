@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SideHeader from "./components/SideHeader";
 import SideLoginSection from "./components/SideLoginSection";
+import SideMenuSection from "./components/SideMenuSection";
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -12,6 +13,7 @@ const SideMenu = () => {
     >
       <SideHeader isOpen={isOpen} setIsOpen={setIsOpen} />
       <SideLoginSection isOpen={isOpen} />
+      <SideMenuSection isOpen={isOpen} />
     </div>
   );
 };

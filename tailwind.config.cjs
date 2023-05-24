@@ -23,8 +23,9 @@ module.exports = {
       xl: "1700px",
     },
     fontSize: {
-      xl: "72px",
-      lg: "52px",
+      sm: "14px",
+      md: "16px",
+      lg: "20px",
     },
   },
   plugins: [],

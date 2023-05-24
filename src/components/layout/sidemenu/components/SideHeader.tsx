@@ -4,7 +4,7 @@ import { SideMenuProps2 as SideMenuProps } from "../interfaces";
 
 const SideHeader = ({ isOpen, setIsOpen }: SideMenuProps) => {
   return (
-    <div className="flex width-[100%] px-[16px] py-[12px] justify-between border-b-[1px] border-b-secondary">
+    <div className="flex width-[100%] px-[16px] py-[12px] justify-between">
       <Logo fill="white" className={`${!isOpen ? "hidden" : ""}`} />
       <MenuBar
         fill="white"
