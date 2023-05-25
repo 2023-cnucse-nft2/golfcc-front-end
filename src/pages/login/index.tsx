@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-[100%] h-[100%]">
+    <div className="flex flex-col items-center justify-center flex-1 h-[100%]">
       <div className="w-[20%] min-w-[300px] flex justify-center mb-[10px]">
         <span>지갑 주소로 로그인 해주세요.</span>
       </div>
