@@ -18,10 +18,10 @@ const SideMenuSection = ({ isOpen }: SideMenuProps) => {
       {navMenu.map((menu) => (
         <Link key={menu.id} to={menu.link}>
           <div
-            className={`flex items-center text-white text-md py-[10px] ${changeComponent(
+            className={`hover:bg-secondary flex items-center text-white text-md py-[10px] ${changeComponent(
               isOpen,
               "px-[20px]",
-              "justify-center"
+              "justify-center py-[24px]"
             )}`}
           >
             <menu.svg className={`${changeComponent(isOpen, "mr-[20px]")}`} />
