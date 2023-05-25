@@ -22,7 +22,7 @@ const SideMenu = () => {
         className={`w-[70px] md:hidden h-[100%] bg-primary flex-col transition-[width] duration-300 ease-in-out`}
       >
         <Link to="/" className="flex justify-center">
-          <div className="py-[10px] text-white text-lg font-bold">HOME</div>
+          <div className="py-[10px] text-white text-md font-bold">SWING</div>
         </Link>
         <SideLoginSection isOpen={false} />
         <SideMenuSection isOpen={false} />

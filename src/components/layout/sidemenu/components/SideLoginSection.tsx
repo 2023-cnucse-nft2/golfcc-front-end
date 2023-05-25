@@ -4,7 +4,7 @@ import { SideMenuProps } from "../interfaces";
 import { Link } from "react-router-dom";
 const SideLoginSection = ({ isOpen }: SideMenuProps) => {
   return (
-    <Link to="/login">
+    <Link to="/">
       <div
         className={`${
           isOpen ? "px-[20px]" : "px-[10px] justify-center"
