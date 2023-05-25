@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as LoginIcon } from "../../../../assets/Login.svg";
+import { ReactComponent as LoginIcon } from "../../../assets/Login.svg";
 import { SideMenuProps } from "../interfaces";
 import { Link } from "react-router-dom";
 const SideLoginSection = ({ isOpen }: SideMenuProps) => {

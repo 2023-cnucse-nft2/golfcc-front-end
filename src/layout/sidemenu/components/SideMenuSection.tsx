@@ -1,7 +1,7 @@
 import React from "react";
-import { navMenu } from "../../../../constants/nav";
+import { navMenu } from "../../../constants/nav";
 import { SideMenuProps } from "../interfaces";
-import { changeComponent } from "../../../../util/cssUtil";
+import { changeComponent } from "../../../util/cssUtil";
 import { Link } from "react-router-dom";
 
 const SideMenuSection = ({ isOpen }: SideMenuProps) => {
