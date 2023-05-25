@@ -7,7 +7,10 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<div>gd</div>} />
+          <Route path="/" element={<div>Swing</div>} />
+          <Route path="/login" element={<div>Login</div>} />
+          <Route path="/publish" element={<div>Publish</div>} />
+          <Route path="/transactions" element={<div>transactions</div>} />
         </Route>
       </Routes>
     </BrowserRouter>

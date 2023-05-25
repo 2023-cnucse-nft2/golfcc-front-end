@@ -2,6 +2,7 @@ import React from "react";
 import { navMenu } from "../../../../constants/nav";
 import { SideMenuProps } from "../interfaces";
 import { changeComponent } from "../../../../util/cssUtil";
+import { Link } from "react-router-dom";
 
 const SideMenuSection = ({ isOpen }: SideMenuProps) => {
   return (
@@ -15,17 +16,18 @@ const SideMenuSection = ({ isOpen }: SideMenuProps) => {
         메뉴
       </div>
       {navMenu.map((menu) => (
-        <div
-          key={menu.id}
-          className={`flex items-center text-white text-md py-[10px] ${changeComponent(
-            isOpen,
-            "px-[20px]",
-            "justify-center"
-          )}`}
-        >
-          <menu.svg className={`${changeComponent(isOpen, "mr-[20px]")}`} />
-          <span className={`${!isOpen && "hidden"}`}>{menu.title}</span>
-        </div>
+        <Link key={menu.id} to={menu.link}>
+          <div
+            className={`flex items-center text-white text-md py-[10px] ${changeComponent(
+              isOpen,
+              "px-[20px]",
+              "justify-center"
+            )}`}
+          >
+            <menu.svg className={`${changeComponent(isOpen, "mr-[20px]")}`} />
+            <span className={`${!isOpen && "hidden"}`}>{menu.title}</span>
+          </div>
+        </Link>
       ))}
     </div>
   );
