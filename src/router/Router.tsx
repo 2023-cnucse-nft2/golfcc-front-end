@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "../layout";
 import LoginPage from "../pages/login";
 import PublishPage from "../pages/publish";
+import TransactionPage from "../pages/transaction";
 
 const Router = () => {
   return (
@@ -11,7 +12,7 @@ const Router = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<LoginPage />} />
           <Route path="/publish" element={<PublishPage />} />
-          <Route path="/transactions" element={<div>transactions</div>} />
+          <Route path="/transactions" element={<TransactionPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
