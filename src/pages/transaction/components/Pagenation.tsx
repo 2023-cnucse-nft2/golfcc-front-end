@@ -19,6 +19,7 @@ const Pagenation = ({ data, setList }: pagenationProps) => {
   const pageButtonNumber = totalPage > 4 ? 5 : totalPage;
 
   useEffect(() => {
+    if (totalPage == 0) setCurrentPage(0);
     if (data.length > pageLimit) {
       setList(data.slice(0, pageLimit));
       return;
@@ -36,7 +37,7 @@ const Pagenation = ({ data, setList }: pagenationProps) => {
   return (
     <div className="flex justify-center py-[20px] w-[100%] min-w-[1060px]">
       <div className="flex justify-center items-center w-[256px]">
-        {currentPage == 1 ? (
+        {currentPage <= 1 ? (
           <>
             <div className="mr-[10px] w-[14px]"></div>
             <div className="mr-[10px] w-[14px]"></div>
