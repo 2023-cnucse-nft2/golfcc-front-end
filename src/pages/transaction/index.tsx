@@ -6,6 +6,7 @@ import TransactionTableBody from "./components/TransactionTableBody";
 import Pagenation from "./components/Pagenation";
 import { useEffect, useState } from "react";
 import { transactionModel } from "../../model/transaction";
+import { Link } from "react-router-dom";
 
 const TransactionPage = () => {
   const [transactionList, setTransactionList] = useState<transactionModel[]>();
@@ -15,14 +16,15 @@ const TransactionPage = () => {
         <TransactionTableHeader />
         <div className="h-[80%]">
           {transactionList?.map((transaction) => (
-            <TransactionTableBody
-              id={transaction.id}
-              type={transaction.type}
-              buyer={transaction.buyer}
-              bargainer={transaction.bargainer}
-              registerDate={dateFormat(transaction.registDate)}
-              key={transaction.id}
-            />
+            <Link key={transaction.id} to={`/transactions/${transaction.id}`}>
+              <TransactionTableBody
+                id={transaction.id}
+                type={transaction.type}
+                buyer={transaction.buyer}
+                bargainer={transaction.bargainer}
+                registerDate={dateFormat(transaction.registDate)}
+              />
+            </Link>
           ))}
         </div>
         <Pagenation data={transactionData} setList={setTransactionList} />

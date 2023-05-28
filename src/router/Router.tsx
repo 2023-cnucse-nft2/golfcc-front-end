@@ -4,6 +4,7 @@ import Layout from "../layout";
 import LoginPage from "../pages/login";
 import PublishPage from "../pages/publish";
 import TransactionPage from "../pages/transaction";
+import TransactionDetailPage from "../pages/transaction/detail";
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
           <Route path="/" element={<LoginPage />} />
           <Route path="/publish" element={<PublishPage />} />
           <Route path="/transactions" element={<TransactionPage />} />
+          <Route path="/transactions/:id" element={<TransactionDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

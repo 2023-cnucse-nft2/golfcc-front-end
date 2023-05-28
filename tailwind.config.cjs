@@ -8,8 +8,7 @@ module.exports = {
         primary: "#2C3834",
         secondary: "#4A5F58",
         inputgray: "#B8B8B8",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        primaryRed: "#691414",
       },
       fontFamily: {
         noto: ["Noto Sans KR", "sans-serif"],
@@ -26,6 +25,7 @@ module.exports = {
     fontSize: {
       sm: "14px",
       md: "16px",
+      bmd: "18px",
       lg: "20px",
       xl: "24px",
     },

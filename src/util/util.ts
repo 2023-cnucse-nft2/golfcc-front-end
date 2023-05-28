@@ -1,6 +1,6 @@
 type priceFormatT = (price: number) => string;
 export const priceFormat: priceFormatT = (price) => {
-  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/, ",");
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
 type dateFormatT1 = (date: Date) => string;
