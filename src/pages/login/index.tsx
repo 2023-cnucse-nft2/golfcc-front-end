@@ -11,7 +11,10 @@ const LoginPage = () => {
           <input className=" border border-inputgray p-[7px]" />
           <input className=" border border-inputgray p-[7px]" />
         </div>
-        <div className="py-[35px] px-[22.5px] bg-primary text-white text-md cursor-pointer select-none">
+        <div
+          className="py-[35px] px-[22.5px] bg-primary text-white text-md cursor-pointer select-none"
+          onClick={() => alert("지갑에 연결되었습니다.")}
+        >
           로그인
         </div>
       </div>

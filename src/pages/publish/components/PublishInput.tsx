@@ -5,7 +5,7 @@ interface publishInputProp {
 const PublishInput = ({ title }: publishInputProp) => {
   return (
     <div className="flex pr-[60px] mb-[17px]">
-      <span className=" w-[74px] text-md mr-[10px] p-[9px]">{title}</span>
+      <span className=" w-[110px] text-md mr-[10px] p-[9px]">{title}</span>
       <input className=" w-[300px] border border-inputgray p-[7px]" />
     </div>
   );

@@ -4,14 +4,16 @@ export const transactionData: transactionModel[] = [
   {
     id: "0xA231238128ED231F23121212322DA1212235681",
     type: "유성 CC",
-    buyer: "채승규",
-    bargainer: "정재성",
+    buyer: "0x99215c45385c560c4444cd0ff57720e2a0ae3a67",
+    bargainer: "0x49ba3a2d4df6fb3a28a644b559d94ebcbc62e6a9",
     startDate: new Date(2023, 3, 14),
     endDate: new Date(2025, 3, 13),
     price: 40000000,
     charge: 500000,
     registDate: new Date(2023, 3, 13),
   },
+];
+/*
   {
     id: "0xA231238128ED231F23121212322DA1212235682",
     type: "유성 CC",
@@ -233,3 +235,4 @@ export const transactionData: transactionModel[] = [
     registDate: new Date(2023, 3, 13),
   },
 ];
+*/
